@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RadioRecommendHeadCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_icn_title_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="cON-DF-qmj">
+                        <rect key="frame" x="0.0" y="39" width="3" height="17"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每日节目推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLT-rg-cSd" customClass="AutoFontLabel">
+                        <rect key="frame" x="13" y="34" width="134" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PkX-eI-rzY">
+                        <rect key="frame" x="3" y="79" width="397" height="0.0"/>
+                        <color key="backgroundColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="uis-8A-5Zc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yLT-rg-cSd" firstAttribute="leading" secondItem="cON-DF-qmj" secondAttribute="trailing" constant="10" id="1Vg-Rj-kw2"/>
+                    <constraint firstItem="cON-DF-qmj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3vJ-hd-9fb"/>
+                    <constraint firstItem="PkX-eI-rzY" firstAttribute="leading" secondItem="cON-DF-qmj" secondAttribute="trailing" id="7SW-MX-5aS"/>
+                    <constraint firstAttribute="trailing" secondItem="PkX-eI-rzY" secondAttribute="trailing" id="DKa-5K-Xhd"/>
+                    <constraint firstItem="yLT-rg-cSd" firstAttribute="centerY" secondItem="cON-DF-qmj" secondAttribute="centerY" id="QyA-gq-cpb"/>
+                    <constraint firstAttribute="bottom" secondItem="PkX-eI-rzY" secondAttribute="bottom" id="Woh-ca-w6q"/>
+                    <constraint firstItem="cON-DF-qmj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="v9K-oO-FE4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cm2_icn_title_line.png" width="3" height="17"/>
+    </resources>
+</document>

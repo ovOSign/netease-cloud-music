@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell multipleTouchEnabled="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="145" id="KGk-i7-Jjw" customClass="RadioRankCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主播电台排行榜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7N-QX-hpp" customClass="AutoFontLabel">
+                        <rect key="frame" x="18" y="22" width="156.5" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最火的节目和电台，" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="170-tg-hMr" customClass="AutoFontLabel">
+                        <rect key="frame" x="18" y="56.5" width="147" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.82122057676315308" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_radio_icn_arr.png" translatesAutoresizingMaskIntoConstraints="NO" id="VOJ-a1-4Yd">
+                        <rect key="frame" x="182.5" y="28" width="9" height="15"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每天更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epU-qS-of3" customClass="AutoFontLabel">
+                        <rect key="frame" x="170" y="56.5" width="65.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.39995324611663818" green="0.40002685785293579" blue="0.39994865655899048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTe-wQ-lsf">
+                        <rect key="frame" x="399" y="0.0" width="0.5" height="104.5"/>
+                        <color key="backgroundColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="HOZ-hg-l9U"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPQ-mb-Xfy">
+                        <rect key="frame" x="0.0" y="104" width="400" height="0.5"/>
+                        <color key="backgroundColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Ozx-Og-Sah"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yoI-XW-ELI">
+                        <rect key="frame" x="0.0" y="0.0" width="0.5" height="104.5"/>
+                        <color key="backgroundColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="8Sa-2Z-7Vm"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C07-O9-wf2">
+                        <rect key="frame" x="1" y="0.0" width="398" height="0.5"/>
+                        <color key="backgroundColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="I2B-8B-d3R"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Agx-8A-ym9">
+                        <rect key="frame" x="260" y="5" width="134" height="94.5"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="gTe-wQ-lsf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5bx-HJ-onf"/>
+                    <constraint firstItem="epU-qS-of3" firstAttribute="baseline" secondItem="170-tg-hMr" secondAttribute="baseline" id="917-3C-2cy"/>
+                    <constraint firstItem="yoI-XW-ELI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AqB-oH-jhF"/>
+                    <constraint firstItem="epU-qS-of3" firstAttribute="leading" secondItem="170-tg-hMr" secondAttribute="trailing" constant="5" id="EpX-bU-9N5"/>
+                    <constraint firstItem="C07-O9-wf2" firstAttribute="leading" secondItem="yoI-XW-ELI" secondAttribute="trailing" id="HbL-VV-QAE"/>
+                    <constraint firstItem="gTe-wQ-lsf" firstAttribute="leading" secondItem="C07-O9-wf2" secondAttribute="trailing" id="Hi2-b4-01H"/>
+                    <constraint firstAttribute="bottom" secondItem="OPQ-mb-Xfy" secondAttribute="bottom" id="Nd1-ev-Qb2"/>
+                    <constraint firstItem="170-tg-hMr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="centerYWithinMargins" constant="4" id="RYf-3o-zlf"/>
+                    <constraint firstItem="gTe-wQ-lsf" firstAttribute="leading" secondItem="Agx-8A-ym9" secondAttribute="trailing" constant="5" id="Sg1-R4-9Ly"/>
+                    <constraint firstItem="OPQ-mb-Xfy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ul9-UA-v0a"/>
+                    <constraint firstAttribute="centerYWithinMargins" secondItem="y7N-QX-hpp" secondAttribute="bottom" constant="4" id="VQi-3a-Vdq"/>
+                    <constraint firstItem="VOJ-a1-4Yd" firstAttribute="leading" secondItem="y7N-QX-hpp" secondAttribute="trailing" constant="8" id="Zck-ic-Dyj"/>
+                    <constraint firstItem="Agx-8A-ym9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="dBB-9a-rFY"/>
+                    <constraint firstItem="y7N-QX-hpp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="e6h-7G-YqD"/>
+                    <constraint firstAttribute="bottom" secondItem="Agx-8A-ym9" secondAttribute="bottom" constant="5" id="eWX-cl-dTd"/>
+                    <constraint firstAttribute="trailing" secondItem="OPQ-mb-Xfy" secondAttribute="trailing" id="h81-F7-yqw"/>
+                    <constraint firstItem="C07-O9-wf2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hRR-Ku-NPj"/>
+                    <constraint firstAttribute="bottom" secondItem="gTe-wQ-lsf" secondAttribute="bottom" id="hcX-Xv-hfx"/>
+                    <constraint firstItem="VOJ-a1-4Yd" firstAttribute="centerY" secondItem="y7N-QX-hpp" secondAttribute="centerY" id="hhQ-wF-PeG"/>
+                    <constraint firstItem="Agx-8A-ym9" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="67:52" id="kB0-w6-Aum"/>
+                    <constraint firstAttribute="trailing" secondItem="gTe-wQ-lsf" secondAttribute="trailing" id="mhj-jz-7mf"/>
+                    <constraint firstItem="170-tg-hMr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="n9s-9h-wh4"/>
+                    <constraint firstAttribute="bottom" secondItem="yoI-XW-ELI" secondAttribute="bottom" id="nV3-87-rjK"/>
+                    <constraint firstItem="yoI-XW-ELI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xB7-Pz-uqh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imageView" destination="Agx-8A-ym9" id="m7N-aT-R4Y"/>
+                <outlet property="rankImageView" destination="Agx-8A-ym9" id="FEx-ac-BRb"/>
+            </connections>
+            <point key="canvasLocation" x="-121" y="25.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cm2_radio_icn_arr.png" width="9" height="15"/>
+    </resources>
+</document>

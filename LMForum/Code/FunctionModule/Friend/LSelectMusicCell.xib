@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LSelectMusicCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CbH-C5-lPB">
+                        <rect key="frame" x="10" y="5" width="64.5" height="64.5"/>
+                        <color key="backgroundColor" red="0.87815254929999997" green="0.46445953849999999" blue="0.43806150560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="CbH-C5-lPB" secondAttribute="height" multiplier="1:1" id="62G-Eq-UYD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验伤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lh-pt-8YY">
+                        <rect key="frame" x="85" y="14" width="305" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" red="0.25624999999999998" green="0.25624999999999998" blue="0.25624999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卫兰-验伤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbH-Zo-KLO">
+                        <rect key="frame" x="85" y="42.5" width="64" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.41105997799999999" green="0.40706910439999999" blue="0.40706910439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="CbH-C5-lPB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="2D7-mU-njF" customClass="WidthLayoutConstraint"/>
+                    <constraint firstAttribute="centerYWithinMargins" secondItem="3lh-pt-8YY" secondAttribute="bottom" id="aFM-BV-1Rq"/>
+                    <constraint firstItem="CbH-C5-lPB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="iO9-fb-akG"/>
+                    <constraint firstItem="TbH-Zo-KLO" firstAttribute="leading" secondItem="3lh-pt-8YY" secondAttribute="leading" id="mVv-O8-SF0"/>
+                    <constraint firstItem="CbH-C5-lPB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nDn-HE-NAJ"/>
+                    <constraint firstItem="TbH-Zo-KLO" firstAttribute="top" secondItem="3lh-pt-8YY" secondAttribute="bottom" constant="5" id="t22-u6-uFc" customClass="WidthLayoutConstraint"/>
+                    <constraint firstItem="3lh-pt-8YY" firstAttribute="leading" secondItem="CbH-C5-lPB" secondAttribute="trailing" constant="10" id="tUC-7W-cEv" customClass="WidthLayoutConstraint"/>
+                    <constraint firstAttribute="bottom" secondItem="CbH-C5-lPB" secondAttribute="bottom" constant="5" id="y3E-Jw-3d1"/>
+                    <constraint firstAttribute="trailing" secondItem="3lh-pt-8YY" secondAttribute="trailing" constant="10" id="y9g-M5-hTC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <inset key="separatorInset" minX="87" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="icon" destination="CbH-C5-lPB" id="zaj-zu-ldI"/>
+                <outlet property="singerAlbum" destination="TbH-Zo-KLO" id="aBs-Ap-Kag"/>
+                <outlet property="songName" destination="3lh-pt-8YY" id="wpr-XD-pxf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

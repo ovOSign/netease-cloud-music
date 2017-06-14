@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LRectMusicHead">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_list_icn_play.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qlp-2c-WgS">
+                    <rect key="frame" x="10" y="21" width="18" height="18"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="播放全部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uni-wc-1Jp">
+                    <rect key="frame" x="38" y="19" width="77.5" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fF-lM-4o2">
+                    <rect key="frame" x="10" y="59.5" width="390" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="lI1-vN-c0m"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97101562500000005" green="0.97101562500000005" blue="0.97101562500000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uni-wc-1Jp" firstAttribute="centerY" secondItem="Qlp-2c-WgS" secondAttribute="centerY" id="55o-jT-70z"/>
+                <constraint firstAttribute="trailing" secondItem="3fF-lM-4o2" secondAttribute="trailing" id="BdB-1M-wMV"/>
+                <constraint firstItem="Qlp-2c-WgS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KKT-0o-Wxo"/>
+                <constraint firstAttribute="bottom" secondItem="3fF-lM-4o2" secondAttribute="bottom" id="YIc-5Z-H2F"/>
+                <constraint firstItem="Qlp-2c-WgS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="jg3-Rt-BC8"/>
+                <constraint firstItem="3fF-lM-4o2" firstAttribute="leading" secondItem="Qlp-2c-WgS" secondAttribute="leading" id="mUd-82-1Kx"/>
+                <constraint firstItem="uni-wc-1Jp" firstAttribute="leading" secondItem="Qlp-2c-WgS" secondAttribute="trailing" constant="10" id="obw-cT-HSG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cm2_list_icn_play.png" width="18" height="18"/>
+    </resources>
+</document>

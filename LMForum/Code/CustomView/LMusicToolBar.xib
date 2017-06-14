@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LMusicToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dd-xq-IiB" customClass="LProgressBar">
+                    <rect key="frame" x="60" y="10" width="280" height="28"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J82-zw-RaP" customClass="AutoFontLabel">
+                    <rect key="frame" x="13.5" y="16" width="36.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p05-MU-bI4" customClass="AutoFontLabel">
+                    <rect key="frame" x="350" y="17" width="34" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNW-x1-mP3">
+                    <rect key="frame" x="0.0" y="38" width="400" height="102"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qp2-XM-FWI" customClass="LPlayButton">
+                            <rect key="frame" x="174.5" y="25" width="52" height="52"/>
+                            <state key="normal" image="cm2_btn_play.png"/>
+                            <state key="selected" image="cm2_btn_pause.png"/>
+                            <connections>
+                                <action selector="playOrPause:" destination="iN0-l3-epB" eventType="touchUpInside" id="6If-xJ-JyS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgt-XS-z3Q">
+                            <rect key="frame" x="246.5" y="26.5" width="49" height="49"/>
+                            <state key="normal" image="cm2_fm_btn_next.png"/>
+                            <state key="highlighted" image="cm2_fm_btn_next_prs.png"/>
+                            <connections>
+                                <action selector="next:" destination="iN0-l3-epB" eventType="touchUpInside" id="qN9-hd-hxM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2X-ND-Vzp">
+                            <rect key="frame" x="105.5" y="26.5" width="49" height="49"/>
+                            <state key="normal" image="cm2_play_btn_prev.png"/>
+                            <state key="highlighted" image="cm2_play_btn_prev_prs.png"/>
+                            <connections>
+                                <action selector="previous:" destination="iN0-l3-epB" eventType="touchUpInside" id="6mZ-Mu-zkt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqu-Vd-kxy" customClass="LLoopButton">
+                            <rect key="frame" x="31.5" y="28.5" width="44" height="44"/>
+                            <state key="normal" image="cm2_icn_loop.png"/>
+                            <connections>
+                                <action selector="loopModelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="SvH-Fb-aVC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deq-En-X8F">
+                            <rect key="frame" x="325.5" y="36.5" width="28" height="28"/>
+                            <state key="normal" backgroundImage="cm2_play_btn_src.png"/>
+                            <connections>
+                                <action selector="src:" destination="iN0-l3-epB" eventType="touchUpInside" id="w5H-JQ-UuI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Qp2-XM-FWI" firstAttribute="centerY" secondItem="JNW-x1-mP3" secondAttribute="centerY" id="3ti-FC-jVY"/>
+                        <constraint firstItem="B2X-ND-Vzp" firstAttribute="leading" secondItem="wqu-Vd-kxy" secondAttribute="trailing" constant="30" id="5OU-bi-XgP" customClass="WidthLayoutConstraint"/>
+                        <constraint firstItem="deq-En-X8F" firstAttribute="centerY" secondItem="Qp2-XM-FWI" secondAttribute="centerY" id="75R-jr-Xhq"/>
+                        <constraint firstItem="wgt-XS-z3Q" firstAttribute="centerY" secondItem="Qp2-XM-FWI" secondAttribute="centerY" id="881-Eo-RpE"/>
+                        <constraint firstItem="Qp2-XM-FWI" firstAttribute="leading" secondItem="B2X-ND-Vzp" secondAttribute="trailing" constant="20" id="Kcg-hk-0lH" customClass="WidthLayoutConstraint"/>
+                        <constraint firstItem="wgt-XS-z3Q" firstAttribute="leading" secondItem="Qp2-XM-FWI" secondAttribute="trailing" constant="20" id="TCU-N4-6nL" customClass="WidthLayoutConstraint"/>
+                        <constraint firstItem="B2X-ND-Vzp" firstAttribute="centerY" secondItem="Qp2-XM-FWI" secondAttribute="centerY" id="UHL-vl-KMY"/>
+                        <constraint firstItem="deq-En-X8F" firstAttribute="leading" secondItem="wgt-XS-z3Q" secondAttribute="trailing" constant="30" id="X3f-iJ-oeP" customClass="WidthLayoutConstraint"/>
+                        <constraint firstItem="wqu-Vd-kxy" firstAttribute="centerY" secondItem="Qp2-XM-FWI" secondAttribute="centerY" id="eV5-AL-BsJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3dd-xq-IiB" firstAttribute="leading" secondItem="J82-zw-RaP" secondAttribute="trailing" constant="10" id="AuR-o1-Fle"/>
+                <constraint firstItem="Qp2-XM-FWI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CDu-XB-vtB"/>
+                <constraint firstItem="J82-zw-RaP" firstAttribute="centerY" secondItem="3dd-xq-IiB" secondAttribute="centerY" id="Frf-fK-g7N"/>
+                <constraint firstItem="JNW-x1-mP3" firstAttribute="top" secondItem="3dd-xq-IiB" secondAttribute="bottom" id="Gx3-mB-nJf"/>
+                <constraint firstItem="3dd-xq-IiB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="NeX-uO-0mR"/>
+                <constraint firstItem="3dd-xq-IiB" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.2" id="QET-GP-HRl"/>
+                <constraint firstItem="3dd-xq-IiB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.7" id="ZnP-xd-CuE"/>
+                <constraint firstItem="JNW-x1-mP3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c4t-tE-4SK"/>
+                <constraint firstAttribute="bottom" secondItem="JNW-x1-mP3" secondAttribute="bottom" id="o1O-1q-Tl4"/>
+                <constraint firstItem="3dd-xq-IiB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oKu-wR-Efu"/>
+                <constraint firstItem="p05-MU-bI4" firstAttribute="leading" secondItem="3dd-xq-IiB" secondAttribute="trailing" constant="10" id="oMy-Yf-W6i"/>
+                <constraint firstItem="p05-MU-bI4" firstAttribute="centerY" secondItem="3dd-xq-IiB" secondAttribute="centerY" id="obo-zE-44V"/>
+                <constraint firstAttribute="trailing" secondItem="JNW-x1-mP3" secondAttribute="trailing" id="sY0-az-RzU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="currentTimeLabel" destination="J82-zw-RaP" id="B3s-hL-crM"/>
+                <outlet property="loopModelBtn" destination="wqu-Vd-kxy" id="pmc-8c-cd5"/>
+                <outlet property="playOrPauseBtn" destination="Qp2-XM-FWI" id="trk-GH-n1F"/>
+                <outlet property="progressBar" destination="3dd-xq-IiB" id="3hC-cV-SW0"/>
+                <outlet property="totalTimeLabel" destination="p05-MU-bI4" id="Qyn-LK-H7x"/>
+            </connections>
+            <point key="canvasLocation" x="-84" y="170.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cm2_btn_pause.png" width="52" height="52"/>
+        <image name="cm2_btn_play.png" width="52" height="52"/>
+        <image name="cm2_fm_btn_next.png" width="49" height="49"/>
+        <image name="cm2_fm_btn_next_prs.png" width="49" height="49"/>
+        <image name="cm2_icn_loop.png" width="44" height="44"/>
+        <image name="cm2_play_btn_prev.png" width="49" height="49"/>
+        <image name="cm2_play_btn_prev_prs.png" width="49" height="49"/>
+        <image name="cm2_play_btn_src.png" width="28" height="28"/>
+    </resources>
+</document>

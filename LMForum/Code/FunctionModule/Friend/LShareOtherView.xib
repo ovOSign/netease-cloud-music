@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同时分享到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6u-kb-KDR" customClass="AutoFontLabel">
+                    <rect key="frame" x="157" y="93" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.39031779050827031" green="0.38652829739653954" blue="0.38652829739653954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_logo_sina_gray.png" translatesAutoresizingMaskIntoConstraints="NO" id="mjG-8K-3ae">
+                    <rect key="frame" x="138" y="134" width="32" height="32"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_logo_douban_gray.png" translatesAutoresizingMaskIntoConstraints="NO" id="V8b-g3-4yv">
+                    <rect key="frame" x="230" y="134" width="32" height="32"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pA5-Xv-7fM">
+                    <rect key="frame" x="133" y="135" width="0.0" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新浪微博" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ids-WK-gDm" customClass="AutoFontLabel">
+                    <rect key="frame" x="127.5" y="181" width="53.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="豆瓣" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqo-UZ-vha" customClass="AutoFontLabel">
+                    <rect key="frame" x="232.5" y="181" width="27" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hK6-DS-chp">
+                    <rect key="frame" x="0.0" y="103.5" width="148" height="0.5"/>
+                    <color key="backgroundColor" red="0.87049323320000005" green="0.87064296009999997" blue="0.8704838157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="pye-g7-yBe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTz-Vv-HfT">
+                    <rect key="frame" x="252" y="103.5" width="148" height="0.5"/>
+                    <color key="backgroundColor" red="0.87049323320000005" green="0.87064296009999997" blue="0.8704838157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="wLU-1T-ase"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mjG-8K-3ae" firstAttribute="leading" secondItem="hK6-DS-chp" secondAttribute="trailing" constant="-10" id="1kb-yo-2EA" customClass="WidthLayoutConstraint"/>
+                <constraint firstItem="ids-WK-gDm" firstAttribute="top" secondItem="mjG-8K-3ae" secondAttribute="bottom" constant="15" id="7rq-fB-aub"/>
+                <constraint firstItem="V8b-g3-4yv" firstAttribute="top" secondItem="Q6u-kb-KDR" secondAttribute="bottom" constant="20" id="9CC-VP-cv8" customClass="HeightLayoutConstraint"/>
+                <constraint firstItem="bTz-Vv-HfT" firstAttribute="leading" secondItem="V8b-g3-4yv" secondAttribute="trailing" constant="-10" id="Cox-Pv-nhN" customClass="WidthLayoutConstraint"/>
+                <constraint firstItem="V8b-g3-4yv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="30" id="IJc-N6-FkG" customClass="HeightLayoutConstraint"/>
+                <constraint firstItem="nqo-UZ-vha" firstAttribute="top" secondItem="V8b-g3-4yv" secondAttribute="bottom" constant="15" id="LP2-S2-vjb"/>
+                <constraint firstItem="mjG-8K-3ae" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Q03-2y-GI7"/>
+                <constraint firstItem="hK6-DS-chp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WkX-Qp-7nq"/>
+                <constraint firstAttribute="trailing" secondItem="bTz-Vv-HfT" secondAttribute="trailing" id="X1W-HX-u57"/>
+                <constraint firstAttribute="centerX" secondItem="mjG-8K-3ae" secondAttribute="trailing" constant="30" id="fQs-w4-D2h" customClass="WidthLayoutConstraint"/>
+                <constraint firstItem="V8b-g3-4yv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gkr-Po-zV7"/>
+                <constraint firstItem="bTz-Vv-HfT" firstAttribute="centerY" secondItem="Q6u-kb-KDR" secondAttribute="centerY" id="lIa-dc-SzD"/>
+                <constraint firstItem="nqo-UZ-vha" firstAttribute="centerX" secondItem="V8b-g3-4yv" secondAttribute="centerX" id="pKe-6v-rJH"/>
+                <constraint firstItem="ids-WK-gDm" firstAttribute="centerX" secondItem="mjG-8K-3ae" secondAttribute="centerX" id="pko-nn-ziW"/>
+                <constraint firstItem="Q6u-kb-KDR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yb4-T7-iKx"/>
+                <constraint firstItem="hK6-DS-chp" firstAttribute="centerY" secondItem="Q6u-kb-KDR" secondAttribute="centerY" id="zaB-Iq-wwg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cm2_logo_douban_gray.png" width="32" height="32"/>
+        <image name="cm2_logo_sina_gray.png" width="32" height="32"/>
+    </resources>
+</document>

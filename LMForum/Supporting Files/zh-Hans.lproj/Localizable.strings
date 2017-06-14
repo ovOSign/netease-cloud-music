@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  LMForum
+
+  Created by 梁海军 on 2016/12/7.
+  Copyright © 2016年 lhj. All rights reserved.
+*/
+"findmusic" = "发现音乐";
+"mymusic" = "我的音乐";
+"friend" = "朋友";
+"account" = "账号";
+
+
+//title
+"title.mymusic" = "我的音乐";
+"title.account" = "账号";
+"title.search" = "搜索音乐、歌词、电台";
